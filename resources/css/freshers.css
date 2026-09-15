@@ -1,0 +1,997 @@
+/* =========================================================
+   QUIET HIRING - FRESHERS PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.qh-page-header {
+    padding: 70px 0;
+    background: #171717;
+}
+
+.qh-page-header-content {
+    max-width: 760px;
+}
+
+.qh-page-header .qh-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 13px;
+    margin-bottom: 18px;
+
+    border-radius: 30px;
+
+    background: rgba(229, 139, 22, 0.12);
+    color: #e58b16;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.qh-page-header h1 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size: 42px;
+    font-weight: 750;
+    line-height: 1.2;
+}
+
+.qh-page-header p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #bcbcbc;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SEARCH SECTION
+   ========================================================= */
+
+.qh-fresher-search {
+    padding: 45px 0;
+
+    background: #f7f7f7;
+}
+
+.qh-fresher-search-card {
+    padding: 32px 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.qh-fresher-search-heading {
+    margin-bottom: 25px;
+}
+
+.qh-search-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 6px 12px;
+    margin-bottom: 10px;
+
+    background: #fff4e5;
+    color: #e58b16;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.qh-fresher-search-heading h2 {
+    margin: 0 0 6px;
+
+    color: #222;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.qh-fresher-search-heading p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SEARCH FORM
+   ========================================================= */
+
+.qh-fresher-search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+
+    gap: 16px;
+
+    align-items: end;
+}
+
+.qh-fresher-search-field {
+    min-width: 0;
+}
+
+.qh-fresher-search-field label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #333;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.qh-fresher-input-wrap {
+    position: relative;
+}
+
+.qh-fresher-input-wrap > i {
+    position: absolute;
+
+    left: 16px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #999;
+
+    font-size: 16px;
+
+    pointer-events: none;
+    z-index: 2;
+}
+
+.qh-fresher-search-input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 16px 0 45px;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: #333;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+.qh-fresher-search-input::placeholder {
+    color: #999;
+}
+
+.qh-fresher-search-input:focus {
+    border-color: #e58b16;
+
+    box-shadow: 0 0 0 3px rgba(229, 139, 22, 0.10);
+}
+
+.qh-fresher-search-btn {
+    height: 52px;
+
+    padding: 0 24px;
+
+    border: 0;
+    border-radius: 10px;
+
+    background: #e58b16;
+    color: #ffffff;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    white-space: nowrap;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.qh-fresher-search-btn:hover {
+    background: #d47708;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 7px 18px rgba(229, 139, 22, 0.22);
+}
+
+
+/* =========================================================
+   JOBS SECTION
+   ========================================================= */
+
+.qh-fresher-jobs-section {
+    padding: 65px 0;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   FILTER CARD
+   ========================================================= */
+
+.qh-fresher-filter-card {
+    padding: 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+
+    position: sticky;
+    top: 90px;
+}
+
+.qh-fresher-filter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.qh-fresher-filter-header h3 {
+    margin: 0;
+
+    color: #222;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.qh-fresher-filter-header a {
+    color: #e58b16;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.qh-fresher-filter-header a:hover {
+    text-decoration: underline;
+}
+
+
+/* Filter Groups */
+
+.qh-fresher-filter-group {
+    padding: 22px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.qh-fresher-filter-group:last-child {
+    padding-bottom: 0;
+
+    border-bottom: 0;
+}
+
+.qh-fresher-filter-group h4 {
+    margin: 0 0 15px;
+
+    color: #333;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* Checkbox */
+
+.qh-fresher-check {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 12px;
+
+    cursor: pointer;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+.qh-fresher-check:last-child {
+    margin-bottom: 0;
+}
+
+.qh-fresher-check input {
+    width: 16px;
+    height: 16px;
+
+    accent-color: #e58b16;
+
+    cursor: pointer;
+}
+
+.qh-fresher-check span {
+    flex: 1;
+}
+
+.qh-fresher-check small {
+    color: #999;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   RESULTS HEADER
+   ========================================================= */
+
+.qh-fresher-results-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 22px;
+}
+
+.qh-fresher-results-header h2 {
+    margin: 0 0 5px;
+
+    color: #222;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.qh-fresher-results-header p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* Sort */
+
+.qh-fresher-sort {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.qh-fresher-sort label {
+    color: #777;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+.qh-fresher-sort select {
+    height: 40px;
+
+    padding: 0 32px 0 12px;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #555;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   JOB CARD
+   ========================================================= */
+
+.qh-fresher-job-card {
+    position: relative;
+
+    padding: 24px;
+    margin-bottom: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.qh-fresher-job-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(229, 139, 22, 0.35);
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Card Top */
+
+.qh-fresher-job-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+}
+
+
+/* Company Logo */
+
+.qh-fresher-company-logo {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #fff4e5;
+    color: #e58b16;
+
+    font-size: 17px;
+    font-weight: 800;
+}
+
+
+/* Save */
+
+.qh-fresher-save {
+    width: 37px;
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #777;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.qh-fresher-save:hover {
+    border-color: #e58b16;
+
+    background: #fff8ef;
+
+    color: #e58b16;
+}
+
+
+/* Job Content */
+
+.qh-fresher-job-content {
+    padding-bottom: 20px;
+}
+
+.qh-fresher-job-type {
+    display: inline-block;
+
+    padding: 5px 9px;
+    margin-bottom: 9px;
+
+    border-radius: 5px;
+
+    background: #f2f7ff;
+    color: #4c6fff;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.qh-fresher-job-content h3 {
+    margin: 0 0 5px;
+
+    color: #222;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.qh-fresher-job-content h4 {
+    margin: 0 0 15px;
+
+    color: #666;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* Job Meta */
+
+.qh-fresher-job-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin-bottom: 15px;
+}
+
+.qh-fresher-job-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+.qh-fresher-job-meta i {
+    color: #e58b16;
+
+    font-size: 14px;
+}
+
+
+/* Tags */
+
+.qh-fresher-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+.qh-fresher-tags span {
+    padding: 6px 10px;
+
+    background: #f6f6f6;
+
+    border-radius: 6px;
+
+    color: #666;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   JOB CARD BOTTOM
+   ========================================================= */
+
+.qh-fresher-job-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.qh-fresher-job-bottom small {
+    color: #999;
+
+    font-size: 11px;
+}
+
+
+/* View Job */
+
+.qh-fresher-view-btn {
+    height: 40px;
+
+    padding: 0 17px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    border: 1px solid #e58b16;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #e58b16;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.qh-fresher-view-btn:hover {
+    background: #e58b16;
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.qh-fresher-jobs-section .qh-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 35px;
+}
+
+.qh-fresher-jobs-section .qh-pagination a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #555;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.qh-fresher-jobs-section .qh-pagination a:hover {
+    border-color: #e58b16;
+
+    color: #e58b16;
+}
+
+.qh-fresher-jobs-section .qh-pagination a.active {
+    border-color: #e58b16;
+
+    background: #e58b16;
+    color: #ffffff;
+}
+
+.qh-fresher-jobs-section .qh-pagination a.disabled {
+    opacity: 0.45;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CTA SECTION
+   ========================================================= */
+
+.qh-fresher-cta {
+    padding: 0 0 70px;
+
+    background: #ffffff;
+}
+
+.qh-fresher-cta-card {
+    padding: 38px 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border-radius: 20px;
+
+    background: #171717;
+}
+
+.qh-fresher-cta-card > div {
+    max-width: 680px;
+}
+
+.qh-fresher-cta-card span {
+    color: #e58b16;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.qh-fresher-cta-card h2 {
+    margin: 8px 0 8px;
+
+    color: #ffffff;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.qh-fresher-cta-card p {
+    margin: 0;
+
+    color: #aaa;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* CTA Button */
+
+.qh-fresher-cta-btn {
+    min-width: 175px;
+    height: 48px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 9px;
+
+    background: #e58b16;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: 0.25s ease;
+}
+
+.qh-fresher-cta-btn:hover {
+    background: #d47708;
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qh-page-header {
+        padding: 55px 0;
+    }
+
+    .qh-page-header h1 {
+        font-size: 35px;
+    }
+
+    .qh-fresher-search-card {
+        padding: 28px;
+    }
+
+    .qh-fresher-search-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qh-fresher-search-btn {
+        width: 100%;
+
+        grid-column: 1 / -1;
+    }
+
+    .qh-fresher-filter-card {
+        position: static;
+    }
+
+    .qh-fresher-cta-card {
+        padding: 32px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .qh-page-header {
+        padding: 45px 0;
+    }
+
+    .qh-page-header h1 {
+        font-size: 29px;
+    }
+
+    .qh-page-header p {
+        font-size: 14px;
+    }
+
+    .qh-fresher-search {
+        padding: 30px 0;
+    }
+
+    .qh-fresher-search-card {
+        padding: 23px 18px;
+
+        border-radius: 16px;
+    }
+
+    .qh-fresher-search-form {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .qh-fresher-search-btn {
+        grid-column: auto;
+
+        width: 100%;
+    }
+
+    .qh-fresher-jobs-section {
+        padding: 45px 0;
+    }
+
+    .qh-fresher-results-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .qh-fresher-sort {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+    .qh-fresher-sort select {
+        flex: 1;
+    }
+
+    .qh-fresher-job-card {
+        padding: 20px;
+    }
+
+    .qh-fresher-job-meta {
+        gap: 10px 15px;
+    }
+
+    .qh-fresher-job-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .qh-fresher-view-btn {
+        width: 100%;
+    }
+
+    .qh-fresher-cta {
+        padding-bottom: 45px;
+    }
+
+    .qh-fresher-cta-card {
+        padding: 28px 22px;
+
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .qh-fresher-cta-card h2 {
+        font-size: 23px;
+    }
+
+    .qh-fresher-cta-btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .qh-page-header h1 {
+        font-size: 26px;
+    }
+
+    .qh-fresher-search-heading h2 {
+        font-size: 22px;
+    }
+
+    .qh-fresher-filter-card {
+        padding: 20px;
+    }
+
+    .qh-fresher-job-content h3 {
+        font-size: 17px;
+    }
+
+    .qh-fresher-job-card {
+        border-radius: 13px;
+    }
+
+    .qh-fresher-job-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .qh-fresher-job-bottom small {
+        margin-bottom: 2px;
+    }
+
+    .qh-fresher-jobs-section .qh-pagination {
+        gap: 4px;
+    }
+
+    .qh-fresher-jobs-section .qh-pagination a {
+        width: 34px;
+        height: 34px;
+    }
+}

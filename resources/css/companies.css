@@ -1,0 +1,658 @@
+/* =========================================================
+   QUIET HIRING - COMPANIES PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   COMPANIES SEARCH SECTION
+   ========================================================= */
+
+.qh-companies-search {
+    padding: 55px 0;
+    background: #f7f7f7;
+}
+
+.qh-company-search-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 22px;
+    padding: 38px 40px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Heading */
+
+.qh-company-search-heading {
+    margin-bottom: 30px;
+}
+
+.qh-search-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 13px;
+    margin-bottom: 14px;
+
+    background: #fff4e5;
+    color: #e58b16;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.qh-company-search-heading h2 {
+    margin: 0 0 8px;
+
+    color: #171717;
+
+    font-size: 30px;
+    font-weight: 750;
+    line-height: 1.25;
+}
+
+.qh-company-search-heading p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SEARCH FORM
+   ========================================================= */
+
+.qh-company-search-form {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    gap: 18px;
+    align-items: end;
+}
+
+
+/* Search Field */
+
+.qh-company-search-field {
+    min-width: 0;
+}
+
+.qh-company-search-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #333;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Input Wrapper */
+
+.qh-search-input-wrap {
+    position: relative;
+    width: 100%;
+}
+
+
+/* Left Icon */
+
+.qh-search-input-wrap > i:first-child {
+    position: absolute;
+
+    left: 17px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #999;
+
+    font-size: 17px;
+
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+/* Input */
+
+.qh-company-search-input {
+    width: 100%;
+    height: 54px;
+
+    padding: 0 18px 0 48px;
+
+    border: 1px solid #dddddd;
+    border-radius: 11px;
+
+    background: #ffffff;
+    color: #333;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.qh-company-search-input::placeholder {
+    color: #999;
+}
+
+.qh-company-search-input:hover {
+    border-color: #cccccc;
+}
+
+.qh-company-search-input:focus {
+    border-color: #e58b16;
+
+    box-shadow:
+        0 0 0 3px rgba(229, 139, 22, 0.10);
+}
+
+
+/* =========================================================
+   SELECT
+   ========================================================= */
+
+.qh-company-search-field select.qh-company-search-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding-right: 45px;
+
+    cursor: pointer;
+}
+
+.qh-company-search-field select.qh-company-search-input option {
+    background: #ffffff;
+    color: #333;
+}
+
+
+/* Select Arrow */
+
+.qh-select-arrow {
+    position: absolute;
+
+    right: 17px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #777;
+
+    font-size: 13px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+   ========================================================= */
+
+.qh-company-search-btn {
+    height: 54px;
+
+    padding: 0 25px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: #e58b16;
+    color: #ffffff;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    white-space: nowrap;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.qh-company-search-btn i {
+    font-size: 16px;
+}
+
+.qh-company-search-btn:hover {
+    background: #d47708;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 18px rgba(229, 139, 22, 0.22);
+}
+
+
+/* =========================================================
+   COMPANIES LIST SECTION
+   ========================================================= */
+
+.qh-companies-section {
+    padding: 70px 0;
+    background: #ffffff;
+}
+
+
+/* Section Heading */
+
+.qh-companies-section .section-heading {
+    margin-bottom: 35px;
+}
+
+
+/* Company Count */
+
+.qh-company-count {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   COMPANY CARD
+   ========================================================= */
+
+.qh-company-card {
+    position: relative;
+
+    height: 100%;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 18px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.qh-company-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(229, 139, 22, 0.35);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   COMPANY CARD TOP
+   ========================================================= */
+
+.qh-company-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+
+/* Company Logo */
+
+.qh-company-logo-large {
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8f8f8;
+
+    border: 1px solid #eeeeee;
+    border-radius: 14px;
+
+    color: #e58b16;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+/* Save Button */
+
+.qh-company-save {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #666;
+
+    cursor: pointer;
+
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.qh-company-save:hover {
+    border-color: #e58b16;
+
+    background: #fff8ef;
+
+    color: #e58b16;
+}
+
+
+/* =========================================================
+   COMPANY INFORMATION
+   ========================================================= */
+
+.qh-company-card h4 {
+    margin: 0 0 9px;
+
+    color: #222;
+
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+
+/* Industry */
+
+.qh-company-industry {
+    display: inline-block;
+
+    margin-bottom: 12px;
+    padding: 6px 10px;
+
+    background: #fff4e5;
+    color: #e58b16;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* Location */
+
+.qh-company-location {
+    margin: 0 0 20px;
+
+    color: #777;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.qh-company-location i {
+    margin-right: 5px;
+
+    color: #e58b16;
+}
+
+
+/* =========================================================
+   COMPANY STATS
+   ========================================================= */
+
+.qh-company-stats {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 28px;
+
+    margin-bottom: 20px;
+    padding-top: 18px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.qh-company-stats div {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+.qh-company-stats strong {
+    color: #222;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.qh-company-stats span {
+    margin-top: 4px;
+
+    color: #888;
+
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   VIEW COMPANY BUTTON
+   ========================================================= */
+
+.qh-company-view-btn {
+    width: 100%;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border: 1px solid #e58b16;
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: #e58b16;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.qh-company-view-btn:hover {
+    background: #e58b16;
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.qh-companies-section .qh-pagination {
+    margin-top: 45px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qh-companies-search {
+        padding: 45px 0;
+    }
+
+    .qh-company-search-card {
+        padding: 32px;
+    }
+
+    .qh-company-search-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qh-company-search-btn {
+        width: 100%;
+
+        grid-column: 1 / -1;
+    }
+
+    .qh-companies-section {
+        padding: 55px 0;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .qh-companies-search {
+        padding: 30px 0;
+    }
+
+    .qh-company-search-card {
+        padding: 25px 20px;
+
+        border-radius: 17px;
+    }
+
+    .qh-company-search-heading {
+        margin-bottom: 25px;
+    }
+
+    .qh-company-search-heading h2 {
+        font-size: 25px;
+    }
+
+    .qh-company-search-heading p {
+        font-size: 14px;
+    }
+
+    .qh-company-search-form {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    .qh-company-search-btn {
+        width: 100%;
+
+        grid-column: auto;
+    }
+
+    .qh-company-search-input {
+        height: 52px;
+    }
+
+    .qh-company-search-btn {
+        height: 52px;
+    }
+
+    .qh-companies-section {
+        padding: 45px 0;
+    }
+
+    .qh-company-card {
+        padding: 20px;
+    }
+
+    .qh-company-logo-large {
+        width: 62px;
+        height: 62px;
+    }
+
+    .qh-company-card h4 {
+        font-size: 18px;
+    }
+
+    .qh-company-stats {
+        gap: 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .qh-company-search-card {
+        padding: 22px 16px;
+    }
+
+    .qh-company-search-heading h2 {
+        font-size: 23px;
+    }
+
+    .qh-search-label {
+        font-size: 11px;
+    }
+
+    .qh-company-search-btn {
+        padding: 0 18px;
+    }
+
+    .qh-company-card {
+        padding: 18px;
+    }
+
+    .qh-company-stats {
+        gap: 15px;
+    }
+
+    .qh-company-stats strong {
+        font-size: 15px;
+    }
+
+    .qh-company-stats span {
+        font-size: 11px;
+    }
+}

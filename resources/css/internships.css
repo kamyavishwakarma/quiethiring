@@ -1,0 +1,1372 @@
+/* =========================================================
+   QUIET HIRING - INTERNSHIPS PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   INTERNSHIP HERO
+   ========================================================= */
+
+.qh-internship-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 85px 0 75px;
+    background: #151515;
+    color: #ffffff;
+}
+
+.qh-internship-hero::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    top: -260px;
+    right: -150px;
+    border-radius: 50%;
+    background: rgba(229, 139, 22, 0.10);
+}
+
+.qh-internship-hero::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    bottom: -180px;
+    left: -100px;
+    border-radius: 50%;
+    background: rgba(229, 139, 22, 0.07);
+}
+
+.qh-internship-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.qh-internship-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    border: 1px solid rgba(229, 139, 22, 0.25);
+    border-radius: 30px;
+    background: rgba(229, 139, 22, 0.08);
+    color: #f0a13a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.qh-internship-eyebrow i {
+    font-size: 14px;
+}
+
+.qh-internship-hero h1 {
+    max-width: 700px;
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: clamp(42px, 5vw, 66px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+}
+
+.qh-internship-hero h1 span {
+    display: block;
+    color: #e58b16;
+}
+
+.qh-internship-hero-text {
+    max-width: 620px;
+    margin: 0 0 30px;
+    color: #bdbdbd;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.qh-internship-hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 45px;
+}
+
+.qh-internship-primary-btn,
+.qh-internship-secondary-btn {
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 0 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.qh-internship-primary-btn {
+    background: #e58b16;
+    color: #ffffff;
+}
+
+.qh-internship-primary-btn:hover {
+    background: #d47708;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(229, 139, 22, 0.25);
+}
+
+.qh-internship-secondary-btn {
+    border: 1px solid #444444;
+    background: transparent;
+    color: #ffffff;
+}
+
+.qh-internship-secondary-btn:hover {
+    border-color: #e58b16;
+    background: rgba(229, 139, 22, 0.08);
+    color: #f0a13a;
+}
+
+.qh-internship-mini-stats {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.qh-internship-mini-stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.qh-internship-mini-stats strong {
+    margin-bottom: 4px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 750;
+}
+
+.qh-internship-mini-stats span {
+    color: #858585;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   HERO VISUAL
+   ========================================================= */
+
+.qh-internship-visual {
+    position: relative;
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qh-internship-main-visual {
+    position: relative;
+    width: 330px;
+    min-height: 360px;
+    padding: 40px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 28px;
+    background: linear-gradient(
+        145deg,
+        #242424,
+        #1b1b1b
+    );
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.40),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.qh-internship-main-visual::before {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border: 1px solid rgba(229, 139, 22, 0.08);
+    border-radius: 22px;
+    pointer-events: none;
+}
+
+.qh-visual-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    border-radius: 17px;
+    background: rgba(229, 139, 22, 0.12);
+    color: #e58b16;
+    font-size: 28px;
+}
+
+.qh-internship-main-visual h3 {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 750;
+    line-height: 1.25;
+}
+
+.qh-internship-main-visual p {
+    margin: 0 0 45px;
+    color: #888888;
+    font-size: 14px;
+}
+
+.qh-visual-progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.qh-visual-progress span {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.qh-visual-progress strong {
+    color: #e58b16;
+    font-size: 12px;
+}
+
+.qh-progress-bar {
+    height: 7px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #333333;
+}
+
+.qh-progress-bar span {
+    display: block;
+    width: 78%;
+    height: 100%;
+    border-radius: inherit;
+    background: #e58b16;
+}
+
+
+/* =========================================================
+   FLOATING CARDS
+   ========================================================= */
+
+.qh-internship-floating-card {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+    padding: 14px;
+    border: 1px solid #eeeeee;
+    border-radius: 13px;
+    background: #ffffff;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.qh-internship-floating-card > i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #fff4e5;
+    color: #e58b16;
+    font-size: 18px;
+}
+
+.qh-internship-floating-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.qh-internship-floating-card strong {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.qh-internship-floating-card span {
+    margin-top: 3px;
+    color: #888888;
+    font-size: 10px;
+}
+
+.qh-internship-card-one {
+    top: 65px;
+    left: -15px;
+}
+
+.qh-internship-card-two {
+    right: -20px;
+    bottom: 55px;
+}
+
+.qh-internship-card-two > i {
+    background: #f3f6ff;
+    color: #5267a8;
+}
+
+
+/* =========================================================
+   SEARCH SECTION
+   ========================================================= */
+
+.qh-internship-search {
+    position: relative;
+    z-index: 5;
+    margin-top: 35px;
+    padding: 0 0 65px;
+    background: #f7f7f7;
+}
+
+.qh-internship-search-card {
+    padding: 35px 38px;
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 15px 45px rgba(0, 0, 1, 0.08);
+}
+
+
+/* CENTER SEARCH HEADING */
+
+.qh-internship-search-heading {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.qh-internship-search-heading > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 9px;
+    color: #e58b16;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.qh-internship-search-heading h2 {
+    margin: 0;
+    color: #222222;
+    font-size: 26px;
+    font-weight: 750;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   SEARCH FORM
+   ========================================================= */
+
+.qh-internship-search-form {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr auto;
+    gap: 14px;
+    align-items: end;
+}
+
+.qh-internship-search-field {
+    min-width: 0;
+}
+
+.qh-internship-search-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.qh-internship-input-wrap {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.qh-internship-input-wrap input,
+.qh-internship-input-wrap select {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0 15px 0 43px;
+    border: 1px solid #dddddd;
+    border-radius: 9px;
+    outline: none;
+    background: #ffffff;
+    color: #333333;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: normal;
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.qh-internship-input-wrap input::placeholder {
+    color: #999999;
+}
+
+.qh-internship-input-wrap input:hover,
+.qh-internship-input-wrap select:hover {
+    border-color: #cccccc;
+}
+
+.qh-internship-input-wrap input:focus,
+.qh-internship-input-wrap select:focus {
+    border-color: #e58b16;
+    box-shadow: 0 0 0 3px rgba(229, 139, 22, 0.10);
+}
+
+
+/* LEFT ICON */
+
+.qh-internship-input-wrap > i:first-child {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 3;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-50%);
+    color: #999999;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+
+/* SELECT */
+
+.qh-internship-input-wrap select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 42px;
+    cursor: pointer;
+}
+
+
+/* SELECT ARROW */
+
+.qh-internship-input-wrap .qh-internship-select-arrow {
+    position: absolute !important;
+    top: 50% !important;
+    right: 14px !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: translateY(-50%) !important;
+
+    color: #777777 !important;
+    font-size: 11px !important;
+
+    pointer-events: none;
+    z-index: 5;
+}
+
+
+/* SEARCH BUTTON */
+
+.qh-internship-search-btn {
+    height: 50px;
+    padding: 0 23px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 9px;
+    background: #e58b16;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.qh-internship-search-btn i {
+    font-size: 15px;
+}
+
+.qh-internship-search-btn:hover {
+    background: #d47708;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(229, 139, 22, 0.20);
+}
+
+
+/* =========================================================
+   JOBS SECTION
+   ========================================================= */
+
+.qh-internship-jobs {
+    padding: 70px 0;
+    background: #f7f7f7;
+}
+
+
+/* CENTER MAIN HEADING */
+
+.qh-internship-section-heading {
+    display: block;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.qh-internship-section-heading > div {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.qh-section-small-title {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #e58b16;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.qh-internship-section-heading h2 {
+    margin: 0;
+    color: #222222;
+    font-size: 32px;
+    font-weight: 750;
+    line-height: 1.25;
+}
+
+.qh-internship-section-heading > p {
+    margin: 10px 0 0;
+    color: #888888;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FILTER
+   ========================================================= */
+
+.qh-internship-filter {
+    position: sticky;
+    top: 25px;
+    padding: 24px;
+    border: 1px solid #eeeeee;
+    border-radius: 17px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+}
+
+.qh-internship-filter-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.qh-internship-filter-head h4 {
+    margin: 0;
+    color: #222222;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.qh-internship-filter-head a {
+    color: #e58b16;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.qh-internship-filter-head a:hover {
+    color: #c66f00;
+}
+
+.qh-internship-filter-group {
+    padding: 21px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.qh-internship-filter-group:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.qh-internship-filter-group h5 {
+    margin: 0 0 14px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.qh-internship-filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 11px;
+    color: #666666;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.qh-internship-filter-group label:last-child {
+    margin-bottom: 0;
+}
+
+.qh-internship-filter-group input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    accent-color: #e58b16;
+    cursor: pointer;
+}
+
+.qh-internship-filter-group label span {
+    margin-left: auto;
+    color: #aaaaaa;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   RESULTS HEADER
+   ========================================================= */
+
+.qh-internship-results-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 17px;
+}
+
+.qh-internship-results-head > div {
+    color: #777777;
+    font-size: 13px;
+}
+
+.qh-internship-results-head strong {
+    color: #222222;
+}
+
+.qh-internship-results-head select {
+    height: 40px;
+    min-width: 145px;
+    padding: 0 30px 0 12px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #555555;
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   JOB CARD
+   ========================================================= */
+
+.qh-internship-job-card {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 22px 24px;
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+    background: #ffffff;
+    transition: all 0.28s ease;
+}
+
+.qh-internship-job-card:hover {
+    border-color: rgba(229, 139, 22, 0.35);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+}
+
+.qh-internship-job-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.qh-internship-company-logo {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    background: #f8f8f8;
+    color: #e58b16;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.qh-internship-save {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #777777;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.qh-internship-save:hover {
+    border-color: #e58b16;
+    background: #fff7ed;
+    color: #e58b16;
+}
+
+.qh-internship-job-content {
+    padding: 17px 0 20px;
+}
+
+.qh-internship-featured {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    background: #fff4e5;
+    color: #e58b16;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.qh-internship-job-content h3 {
+    margin: 0 0 6px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.qh-internship-company-name {
+    margin: 0 0 15px;
+    color: #777777;
+    font-size: 13px;
+}
+
+.qh-internship-job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    margin-bottom: 15px;
+}
+
+.qh-internship-job-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #777777;
+    font-size: 11px;
+}
+
+.qh-internship-job-meta i {
+    color: #e58b16;
+    font-size: 13px;
+}
+
+.qh-internship-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.qh-internship-tags span {
+    padding: 5px 9px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    color: #666666;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.qh-internship-job-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 17px;
+    border-top: 1px solid #eeeeee;
+}
+
+.qh-internship-job-bottom > div {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.qh-internship-job-bottom strong {
+    color: #222222;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+.qh-internship-job-bottom span {
+    color: #999999;
+    font-size: 10px;
+}
+
+.qh-internship-job-bottom a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #e58b16;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.qh-internship-job-bottom a:hover {
+    gap: 10px;
+    color: #c66f00;
+}
+
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.qh-internship-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 35px;
+}
+
+.qh-internship-pagination a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.qh-internship-pagination a:hover,
+.qh-internship-pagination a.active {
+    border-color: #e58b16;
+    background: #e58b16;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   BENEFITS
+   ========================================================= */
+
+.qh-internship-benefits {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.qh-internship-benefits .qh-internship-section-heading {
+    max-width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.qh-internship-benefits
+.qh-internship-section-heading p {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.qh-benefit-card {
+    height: 100%;
+    padding: 30px 27px;
+    border: 1px solid #eeeeee;
+    border-radius: 17px;
+    background: #ffffff;
+    transition: all 0.28s ease;
+}
+
+.qh-benefit-card:hover {
+    border-color: rgba(229, 139, 22, 0.30);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+    transform: translateY(-4px);
+}
+
+.qh-benefit-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    background: #fff4e5;
+    color: #e58b16;
+    font-size: 23px;
+}
+
+.qh-benefit-card h3 {
+    margin: 0 0 10px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.qh-benefit-card p {
+    margin: 0;
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.qh-internship-cta {
+    padding: 0 0 80px;
+    background: #ffffff;
+}
+
+.qh-internship-cta-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 45px 50px;
+    border-radius: 22px;
+    background: #181818;
+}
+
+.qh-internship-cta-box::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: -120px;
+    right: -80px;
+    border-radius: 50%;
+    background: rgba(229, 139, 22, 0.10);
+}
+
+.qh-internship-cta-box > div {
+    position: relative;
+    z-index: 1;
+}
+
+.qh-internship-cta-box > div > span {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: #e58b16;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.qh-internship-cta-box h2 {
+    max-width: 600px;
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 750;
+    line-height: 1.25;
+}
+
+.qh-internship-cta-box p {
+    margin: 0;
+    color: #999999;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.qh-internship-cta-box > a {
+    position: relative;
+    z-index: 2;
+    min-width: 165px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 20px;
+    border-radius: 9px;
+    background: #e58b16;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+}
+
+.qh-internship-cta-box > a:hover {
+    background: #d47708;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+    .qh-internship-search-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qh-internship-search-btn {
+        width: 100%;
+    }
+
+    .qh-internship-main-visual {
+        width: 300px;
+    }
+
+    .qh-internship-card-one {
+        left: -5px;
+    }
+
+    .qh-internship-card-two {
+        right: -5px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qh-internship-hero {
+        padding: 65px 0 100px;
+    }
+
+    .qh-internship-hero h1 {
+        font-size: 48px;
+    }
+
+    .qh-internship-visual {
+        min-height: 420px;
+        margin-top: 15px;
+    }
+
+    .qh-internship-search {
+        margin-top: -55px;
+    }
+
+    .qh-internship-filter {
+        position: static;
+    }
+
+    .qh-internship-section-heading h2 {
+        font-size: 28px;
+    }
+
+    .qh-internship-cta-box {
+        padding: 38px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .qh-internship-hero {
+        padding: 50px 0 75px;
+    }
+
+    .qh-internship-hero h1 {
+        font-size: 39px;
+        letter-spacing: -0.8px;
+    }
+
+    .qh-internship-hero-text {
+        font-size: 14px;
+    }
+
+    .qh-internship-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 35px;
+    }
+
+    .qh-internship-primary-btn,
+    .qh-internship-secondary-btn {
+        width: 100%;
+    }
+
+    .qh-internship-mini-stats {
+        gap: 22px;
+    }
+
+    .qh-internship-mini-stats strong {
+        font-size: 18px;
+    }
+
+    .qh-internship-mini-stats span {
+        font-size: 10px;
+    }
+
+    .qh-internship-visual {
+        min-height: 390px;
+    }
+
+    .qh-internship-main-visual {
+        width: 275px;
+        min-height: 330px;
+        padding: 32px 25px;
+    }
+
+    .qh-internship-main-visual h3 {
+        font-size: 23px;
+    }
+
+    .qh-internship-floating-card {
+        min-width: 185px;
+        padding: 11px;
+    }
+
+    .qh-internship-card-one {
+        top: 35px;
+        left: 0;
+    }
+
+    .qh-internship-card-two {
+        right: 0;
+        bottom: 25px;
+    }
+
+    .qh-internship-search {
+        margin-top: -25px;
+        padding-bottom: 45px;
+    }
+
+    .qh-internship-search-card {
+        padding: 25px 20px;
+    }
+
+    .qh-internship-search-form {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .qh-internship-search-heading h2 {
+        font-size: 21px;
+    }
+
+    .qh-internship-jobs {
+        padding: 50px 0;
+    }
+
+    .qh-internship-section-heading {
+        margin-bottom: 27px;
+        text-align: center;
+    }
+
+    .qh-internship-section-heading h2 {
+        font-size: 25px;
+    }
+
+    .qh-internship-section-heading > p {
+        margin-top: 8px;
+    }
+
+    .qh-internship-filter {
+        margin-bottom: 5px;
+    }
+
+    .qh-internship-results-head {
+        margin-top: 15px;
+    }
+
+    .qh-internship-job-card {
+        padding: 20px;
+    }
+
+    .qh-internship-job-meta {
+        gap: 10px;
+    }
+
+    .qh-internship-job-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .qh-internship-job-bottom a {
+        width: 100%;
+        min-height: 42px;
+        justify-content: center;
+        border: 1px solid #e58b16;
+        border-radius: 8px;
+    }
+
+    .qh-internship-benefits {
+        padding: 55px 0;
+    }
+
+    .qh-internship-cta {
+        padding-bottom: 55px;
+    }
+
+    .qh-internship-cta-box {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 32px 25px;
+    }
+
+    .qh-internship-cta-box h2 {
+        font-size: 25px;
+    }
+
+    .qh-internship-cta-box > a {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .qh-internship-hero h1 {
+        font-size: 34px;
+    }
+
+    .qh-internship-eyebrow {
+        font-size: 10px;
+    }
+
+    .qh-internship-mini-stats {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .qh-internship-mini-stats strong {
+        font-size: 16px;
+    }
+
+    .qh-internship-visual {
+        min-height: 350px;
+    }
+
+    .qh-internship-main-visual {
+        width: 245px;
+        min-height: 300px;
+        padding: 27px 22px;
+    }
+
+    .qh-internship-main-visual h3 {
+        font-size: 21px;
+    }
+
+    .qh-visual-icon {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 22px;
+    }
+
+    .qh-internship-floating-card {
+        min-width: 165px;
+    }
+
+    .qh-internship-floating-card > i {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+    .qh-internship-floating-card strong {
+        font-size: 10px;
+    }
+
+    .qh-internship-floating-card span {
+        font-size: 9px;
+    }
+
+    .qh-internship-card-one {
+        left: -5px;
+    }
+
+    .qh-internship-card-two {
+        right: -5px;
+    }
+
+    .qh-internship-results-head select {
+        max-width: 130px;
+        min-width: 120px;
+    }
+
+    .qh-internship-job-content h3 {
+        font-size: 17px;
+    }
+
+    .qh-internship-job-meta span {
+        font-size: 10px;
+    }
+
+    .qh-internship-tags span {
+        font-size: 9px;
+    }
+
+    .qh-internship-pagination a {
+        width: 34px;
+        height: 34px;
+    }
+
+}
