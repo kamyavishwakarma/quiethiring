@@ -29,4 +29,7 @@ Route::get('/internships', function () {
 Route::get('/internships/software-development-intern', function () {
     return view('frontend.internship-details');
 });
+Route::get('/about', function () {
+    return view('frontend.about');
+});
     

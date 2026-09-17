@@ -46,17 +46,17 @@
                 </li>
 
                 <li class="nav-item">
-                     <a class="nav-link qh-nav-link {{ request()->is('internships*') ? 'active' : '' }}"
+                    <a class="nav-link qh-nav-link {{ request()->is('internships*') ? 'active' : '' }}"
                         href="{{ url('/internships') }}">
                         Internships
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link qh-nav-link" href="#">
-                        About Us
+                    <a class="nav-link qh-nav-link {{ request()->is('about') ? 'active' : '' }}"
+                        href="{{ url('/about') }}">
+                        About
                     </a>
-                </li>
 
             </ul>
 

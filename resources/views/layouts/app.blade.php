@@ -31,7 +31,9 @@
      'resources/css/freshers.css',
       'resources/css/internships.css',
       'resources/css/internship-details.css',
-    'resources/js/app.js'
+    'resources/js/app.js',
+    'resources/css/about.css',
+
 ])
 
     @stack('styles')
